@@ -9,14 +9,14 @@ import CoreData
 
 protocol CoreDataServiceType {
     func initSellData() throws
-    func fetchSellData() throws -> [Sell]
+    func fetchSellData() throws -> [ItemToSell]
 }
 
 class CoreDataService: CoreDataServiceType {
     lazy var coreDataStack = CoreDataStack(modelName: "JobLogic")
     
     func initSellData() throws {
-        let fetch: NSFetchRequest<Sell> = Sell.fetchRequest()
+        let fetch: NSFetchRequest<ItemToSell> = ItemToSell.fetchRequest()
         
         let sellCount = (try? coreDataStack.managedContext.count(for: fetch)) ?? 0
         
@@ -30,10 +30,10 @@ class CoreDataService: CoreDataServiceType {
         ]
         
         for item in items {
-            let entity = NSEntityDescription.entity(forEntityName: "Sell",
+            let entity = NSEntityDescription.entity(forEntityName: "ItemToSell",
                                                     in: coreDataStack.managedContext)!
-            let sell = Sell(entity: entity,
-                            insertInto: coreDataStack.managedContext)
+            let sell = ItemToSell(entity: entity,
+                                  insertInto: coreDataStack.managedContext)
             
             sell.id = Int16(item.id)
             sell.name = item.name
@@ -45,8 +45,8 @@ class CoreDataService: CoreDataServiceType {
         try coreDataStack.managedContext.save()
     }
     
-    func fetchSellData() throws -> [Sell] {
-        let fetchRequest: NSFetchRequest<Sell> = Sell.fetchRequest()
+    func fetchSellData() throws -> [ItemToSell] {
+        let fetchRequest: NSFetchRequest<ItemToSell> = ItemToSell.fetchRequest()
         let results = try coreDataStack.managedContext.fetch(fetchRequest)
         return results
     }

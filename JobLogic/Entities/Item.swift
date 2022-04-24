@@ -14,12 +14,12 @@ struct Item: Codable {
     let quantity: Int
     let type: Int
     
-    init(sell: Sell) {
-        self.id = Int(sell.id)
-        self.name = sell.name ?? ""
-        self.price = Int(sell.price)
-        self.quantity = Int(sell.quantity)
-        self.type = Int(sell.type)
+    init(itemToSell: ItemToSell) {
+        self.id = Int(itemToSell.id)
+        self.name = itemToSell.name ?? ""
+        self.price = Int(itemToSell.price)
+        self.quantity = Int(itemToSell.quantity)
+        self.type = Int(itemToSell.type)
     }
     
     init(id: Int, name: String, price: Int, quantity: Int, type: Int) {

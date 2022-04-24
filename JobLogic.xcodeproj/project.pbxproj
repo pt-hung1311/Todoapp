@@ -84,9 +84,9 @@
 		828778B228150F2E006122E9 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 828778B128150F2E006122E9 /* RxBlocking */; };
 		828778B428150F31006122E9 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 828778B328150F31006122E9 /* RxTest */; };
 		828778B628151199006122E9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828778B528151199006122E9 /* CoreDataStack.swift */; };
-		828778C8281515DB006122E9 /* Sell+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828778C6281515DB006122E9 /* Sell+CoreDataClass.swift */; };
-		828778C9281515DB006122E9 /* Sell+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828778C7281515DB006122E9 /* Sell+CoreDataProperties.swift */; };
 		828778CD2815256B006122E9 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828778CC2815256B006122E9 /* CoreDataService.swift */; };
+		828778DB28154FFB006122E9 /* ItemToSell+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828778D928154FFB006122E9 /* ItemToSell+CoreDataClass.swift */; };
+		828778DC28154FFB006122E9 /* ItemToSell+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828778DA28154FFB006122E9 /* ItemToSell+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,9 +175,9 @@
 		828778A428150D49006122E9 /* BuyListNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyListNavigatorMock.swift; sourceTree = "<group>"; };
 		828778A628150D53006122E9 /* SellListNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellListNavigatorMock.swift; sourceTree = "<group>"; };
 		828778B528151199006122E9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		828778C6281515DB006122E9 /* Sell+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sell+CoreDataClass.swift"; sourceTree = "<group>"; };
-		828778C7281515DB006122E9 /* Sell+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sell+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		828778CC2815256B006122E9 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		828778D928154FFB006122E9 /* ItemToSell+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemToSell+CoreDataClass.swift"; sourceTree = "<group>"; };
+		828778DA28154FFB006122E9 /* ItemToSell+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemToSell+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -505,8 +505,8 @@
 		828778B928151388006122E9 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				828778C6281515DB006122E9 /* Sell+CoreDataClass.swift */,
-				828778C7281515DB006122E9 /* Sell+CoreDataProperties.swift */,
+				828778D928154FFB006122E9 /* ItemToSell+CoreDataClass.swift */,
+				828778DA28154FFB006122E9 /* ItemToSell+CoreDataProperties.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -627,7 +627,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				828778C9281515DB006122E9 /* Sell+CoreDataProperties.swift in Sources */,
 				8268DF992813FE540025BDA2 /* SellListAssembler.swift in Sources */,
 				82374C852812E92E00DB1BFC /* MainViewController.swift in Sources */,
 				82374C812812E92E00DB1BFC /* AppDelegate.swift in Sources */,
@@ -657,10 +656,11 @@
 				8268DFA8281413710025BDA2 /* CallListCell.swift in Sources */,
 				8268DFAD281441900025BDA2 /* BuyListCell.swift in Sources */,
 				82374CA02812EB2B00DB1BFC /* AppAssembler.swift in Sources */,
+				828778DB28154FFB006122E9 /* ItemToSell+CoreDataClass.swift in Sources */,
 				8268DF702813998A0025BDA2 /* APIUrl.swift in Sources */,
 				8268DF642813024B0025BDA2 /* APIInputBase.swift in Sources */,
 				8268DF9D2813FE650025BDA2 /* SellListViewController.swift in Sources */,
-				828778C8281515DB006122E9 /* Sell+CoreDataClass.swift in Sources */,
+				828778DC28154FFB006122E9 /* ItemToSell+CoreDataProperties.swift in Sources */,
 				8268DFA12813FE730025BDA2 /* SellListExecute.swift in Sources */,
 				8268DF8D2813FE240025BDA2 /* CallListExecute.swift in Sources */,
 				8268DF8B2813FE1B0025BDA2 /* CallListViewModel.swift in Sources */,
